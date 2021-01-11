@@ -16,5 +16,13 @@ Examples:
 - XO("zzoo") ➞ False
 """
 def XO(txt):
-    # Your code here
+    if txt.find("x") == txt.find("o"):
+        return True
+    else: 
+        return False
 
+print(XO("ooxx"))
+print(XO("xooxx"))
+print(XO("ooxXm"))
+print(XO("zpzpzpp"))
+print(XO("zzoo"))
